@@ -1,5 +1,7 @@
 body{
     background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
 }
 .logo{
     display: flex;
@@ -62,17 +64,41 @@ p{
     text-align: center;
     font-size: 40px;
 }
+.letr input{
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #846714;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+
+}
+.letr{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: #846714;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+
+}
+
 .voltar img{
     display: flex;
     height: 30px;
     cursor: pointer;
 }
 #box{
-    border-radius: 40px;
+    position: fixed;
+    border-radius: 20px;
     margin: 0 auto;
     height: 500px;
     width: 500px;
-    background-color: #a79461;
+    background-color: #8a7a50;
 }
 .cadastra input{
     border-style: none;
@@ -81,3 +107,140 @@ p{
     text-align: center;
     color: black;
 }
+.bot button{
+    background-color: white;
+    color: black;
+    
+}
+
+
+
+
+
+
+header, main {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-button {
+   text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium
+}
+
+.main-button:hover {
+    background-color: #88794e;
+}
+
+/* Estilos do Modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1000; /* Fica na frente de tudo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite rolagem se o conteúdo for grande */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semi-transparente */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background-color: #F5F5DC;
+    margin: 15% auto; /* 15% do topo e centralizado horizontalmente */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+/* Animação para o modal aparecer */
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+
+/* Botão de Fechar (X) */
+.close-btn {
+    color: #000000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos do Formulário (Reutilizado e adaptado) */
+.login-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #846714;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #88794e;
+}
+
+.bottom-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.bottom-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
